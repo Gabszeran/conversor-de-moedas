@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>suamoeda.com</h1>
+    </header>
+
+    <div id="titulo">
+        <h1>Conversor de Moeda</h1>
+         <p>Bem-vindo à ferramenta de moeda mais confiável do mundo.</p>
+    </div>
+
+    <div id="container">
+
+        <div id="labels">
+
+            <div id="input-valor">
+                Valor<br><input type="number" id="valor" placeholder="Digite o valor a ser convertido">
+            </div>
+
+            <div id="moedaOrigem">
+
+                <label for="deMoeda">De</label><br>
+
+                <select id="deMoeda">
+                    <option value="AED">AED - Dirham dos Emirados Árabes Unidos</option>
+                    <option value="ARS">ARS - Peso Argentino</option>
+                    <option value="AUD">AUD - Dólar Australiano</option>
+                    <option value="BGN">BGN - Lev Búlgaro</option>
+                    <option value="BRL">BRL - Real Brasileiro</option>
+                    <option value="CAD">CAD - Dólar Canadense</option>
+                    <option value="CHF">CHF - Franco Suíço</option>
+                    <option value="CLP">CLP - Peso Chileno</option>
+                    <option value="CNY">CNY - Yuan Chinês</option>
+                    <option value="COP">COP - Peso Colombiano</option>
+                    <option value="CZK">CZK - Coroa Tcheca</option>
+                    <option value="DKK">DKK - Coroa Dinamarquesa</option>
+                    <option value="EGP">EGP - Libra Egípcia</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - Libra Esterlina</option>
+                    <option value="GHS">GHS - Cedi Ganês</option>
+                    <option value="HKD">HKD - Dólar de Hong Kong</option>
+                    <option value="HUF">HUF - Forint Húngaro</option>
+                    <option value="IDR">IDR - Rupia Indonésia</option>
+                    <option value="ILS">ILS - Novo Shekel Israelense</option>
+                    <option value="INR">INR - Rúpia Indiana</option>
+                    <option value="JPY">JPY - Iene Japonês</option>
+                    <option value="KES">KES - Xelim Queniano</option>
+                    <option value="KRW">KRW - Won Sul-coreano</option>
+                    <option value="MXN">MXN - Peso Mexicano</option>
+                    <option value="MYR">MYR - Ringgit Malaio</option>
+                    <option value="NGN">NGN - Naira Nigeriano</option>
+                    <option value="NOK">NOK - Coroa Norueguesa</option>
+                    <option value="NZD">NZD - Dólar Neozelandês</option>
+                    <option value="PHP">PHP - Peso Filipino</option>
+                    <option value="PLN">PLN - Złoty Polonês</option>
+                    <option value="RON">RON - Leu Romeno</option>
+                    <option value="RUB">RUB - Rublo Russo</option>
+                    <option value="SAR">SAR - Rial Saudita</option>
+                    <option value="SEK">SEK - Coroa Sueca</option>
+                    <option value="SGD">SGD - Dólar de Singapura</option>
+                    <option value="THB">THB - Baht Tailandês</option>
+                    <option value="TRY">TRY - Lira Turca</option>
+                    <option value="UAH">UAH - Hryvnia Ucraniano</option>
+                    <option value="USD">USD - Dólar dos Estados Unidos</option>
+                    <option value="VND">VND - Dong Vietnamita</option>
+                    <option value="XAF">XAF - Franco CFA da África Central</option>
+                    <option value="XOF">XOF - Franco CFA da África Ocidental</option>
+                    <option value="ZAR">ZAR - Rand Sul-africano</option>
+                </select>
+
+            </div>
+
+            <div id="setas">
+                <img src="">
+            </div>
+
+            <div id="moedaDestino">
+
+                <label for="paraMoeda">Para</label><br>
+
+                <select id="paraMoeda">
+                    <option value="AED">AED - Dirham dos Emirados Árabes Unidos</option>
+                    <option value="ARS">ARS - Peso Argentino</option>
+                    <option value="AUD">AUD - Dólar Australiano</option>
+                    <option value="BGN">BGN - Lev Búlgaro</option>
+                    <option value="BRL">BRL - Real Brasileiro</option>
+                    <option value="CAD">CAD - Dólar Canadense</option>
+                    <option value="CHF">CHF - Franco Suíço</option>
+                    <option value="CLP">CLP - Peso Chileno</option>
+                    <option value="CNY">CNY - Yuan Chinês</option>
+                    <option value="COP">COP - Peso Colombiano</option>
+                    <option value="CZK">CZK - Coroa Tcheca</option>
+                    <option value="DKK">DKK - Coroa Dinamarquesa</option>
+                    <option value="EGP">EGP - Libra Egípcia</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - Libra Esterlina</option>
+                    <option value="GHS">GHS - Cedi Ganês</option>
+                    <option value="HKD">HKD - Dólar de Hong Kong</option>
+                    <option value="HUF">HUF - Forint Húngaro</option>
+                    <option value="IDR">IDR - Rupia Indonésia</option>
+                    <option value="ILS">ILS - Novo Shekel Israelense</option>
+                    <option value="INR">INR - Rúpia Indiana</option>
+                    <option value="JPY">JPY - Iene Japonês</option>
+                    <option value="KES">KES - Xelim Queniano</option>
+                    <option value="KRW">KRW - Won Sul-coreano</option>
+                    <option value="MXN">MXN - Peso Mexicano</option>
+                    <option value="MYR">MYR - Ringgit Malaio</option>
+                    <option value="NGN">NGN - Naira Nigeriano</option>
+                    <option value="NOK">NOK - Coroa Norueguesa</option>
+                    <option value="NZD">NZD - Dólar Neozelandês</option>
+                    <option value="PHP">PHP - Peso Filipino</option>
+                    <option value="PLN">PLN - Złoty Polonês</option>
+                    <option value="RON">RON - Leu Romeno</option>
+                    <option value="RUB">RUB - Rublo Russo</option>
+                    <option value="SAR">SAR - Rial Saudita</option>
+                    <option value="SEK">SEK - Coroa Sueca</option>
+                    <option value="SGD">SGD - Dólar de Singapura</option>
+                    <option value="THB">THB - Baht Tailandês</option>
+                    <option value="TRY">TRY - Lira Turca</option>
+                    <option value="UAH">UAH - Hryvnia Ucraniano</option>
+                    <option value="USD">USD - Dólar dos Estados Unidos</option>
+                    <option value="VND">VND - Dong Vietnamita</option>
+                    <option value="XAF">XAF - Franco CFA da África Central</option>
+                    <option value="XOF">XOF - Franco CFA da África Ocidental</option>
+                    <option value="ZAR">ZAR - Rand Sul-africano</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div id="resultado"></div>
+
+        <div id="aviso-botao">
+    
+            <div id="aviso">
+                <img src="">
+                <a href="https://openexchangerates.org/">Fonte dos dados utilizados: https://openexchangerates.org/</a>
+            </div>
+        
+            <button onclick="converterMoeda()">Converter</button>
+    
+        </div>
+    </div>
+
+
+</html>
+<script src="assets/script.js"></script>
+</body>
+</html>
