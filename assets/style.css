@@ -33,6 +33,7 @@ header h1 {
 #titulo {
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     color: #fff;
     margin: 40px;
@@ -48,33 +49,122 @@ p {
 }
 
 #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
     background-color: #fff;
     width: 95vw;
     min-height: 275px;
     max-width: 1152px;
-    align-content: center;
     margin: auto;
     border-radius: 13px;
     box-shadow: 4px 7px 8px rgba(0, 0, 0, 0.21), -4px 7px 8px rgba(0, 0, 0, 0.21);
+    padding: 30px;
 }
 
 #labels {
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 30px;
+    justify-content: space-between;
+}
+
+.caixa {
+    width: 25vw;
+    max-width: 320px;
+    min-height: 50px;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 8px;
+    background: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    box-shadow: rgba(0, 17, 51, 0.05) 0px 3px 15px;
+    color: rgb(20, 30, 55);
+}
+
+#resultado-aviso-botao {
+    display: flex;
+    flex-direction: column;
 }
 
 #aviso-botao {
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-#input-valor,
-#de-moeda,
-#para-moeda {
-    margin: 15px;
-    width: 20vw;
+#resultado {
+    font-size: 1.8rem;
+    color: #635D5D;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#aviso {
+    background-color: #F1F1F1;
+    width: auto;
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+#aviso img {
+    width: 12px;
+    margin: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #635D5D;
+    font-size: 11px;
+}
+
+button {
+    background-color: #3071EF;
+    border-radius: 8px;
+    width: 120px;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer {
+    height: 6vh;
+}
+
+@media screen and (max-width: 600px) {
+    #labels {
+        flex-direction: column;
+    }
+
+    .caixa {
+        width: 80vw;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    #aviso-botao {
+        flex-direction: column;
+    }
+
+    #resultado {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    #aviso {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #aviso img {
+        margin-left: 12px;
+    }
 }
