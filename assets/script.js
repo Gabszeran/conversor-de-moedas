@@ -28,6 +28,9 @@ function converterMoeda() {
 
         let valorConvertido = (valor / valorOrigem) * valorDestino
         console.log(valorConvertido)
+        
+        let resultado = document.querySelector("#resultado")
+        resultado.innerHTML = `${valor} ${moedaOrigem} = <br> ${valorConvertido} ${moedaDestino}`
     })
     .catch(error => {
         console.error("Ocorreu um erro ao solicitar as taxas de câmbio à API.")
@@ -35,3 +38,9 @@ function converterMoeda() {
 
 }
 
+function handleKeyPress(event) {
+    if (event.keyCode === 13) {
+        document.querySelector("#botao").click();
+    }
+}
+document.addEventListener("keypress", handleKeyPress);
