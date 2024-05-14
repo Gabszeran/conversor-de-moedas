@@ -3,14 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moeda</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -21,7 +13,7 @@
 
     <div id="titulo">
         <h1>Conversor de Moeda</h1>
-         <p>Bem-vindo à ferramenta de moeda mais confiável do mundo.</p>
+         <p>Bem-vindo à sua ferramenta de taxa de câmbio.</p>
     </div>
 
     <div id="container">
@@ -29,14 +21,14 @@
         <div id="labels">
 
             <div id="input-valor">
-                Valor<br><input type="number" id="valor" placeholder="Digite o valor a ser convertido">
+                Valor<br><input type="number" id="valor" class="caixa" placeholder="Digite o valor a ser convertido">
             </div>
-
+            
             <div id="moedaOrigem">
-
+                
                 <label for="deMoeda">De</label><br>
 
-                <select id="deMoeda">
+                <select id="deMoeda" class="caixa">
                     <option value="AED">AED - Dirham dos Emirados Árabes Unidos</option>
                     <option value="ARS">ARS - Peso Argentino</option>
                     <option value="AUD">AUD - Dólar Australiano</option>
@@ -83,17 +75,13 @@
                     <option value="ZAR">ZAR - Rand Sul-africano</option>
                 </select>
 
-            </div>
-
-            <div id="setas">
-                <img src="">
             </div>
 
             <div id="moedaDestino">
 
                 <label for="paraMoeda">Para</label><br>
 
-                <select id="paraMoeda">
+                <select id="paraMoeda" class="caixa">
                     <option value="AED">AED - Dirham dos Emirados Árabes Unidos</option>
                     <option value="ARS">ARS - Peso Argentino</option>
                     <option value="AUD">AUD - Dólar Australiano</option>
@@ -143,20 +131,28 @@
             </div>
         </div>
 
-        <div id="resultado"></div>
+            <div id="resultado-aviso-botao">
 
-        <div id="aviso-botao">
-    
-            <div id="aviso">
-                <img src="">
-                <a href="https://openexchangerates.org/">Fonte dos dados utilizados: https://openexchangerates.org/</a>
-            </div>
+                <div id="resultado"></div>
+
+                <div id="aviso-botao">
         
-            <button onclick="converterMoeda()">Converter</button>
-    
+                    <div id="aviso">
+                        <img src="assets/img/info.svg" alt="ícone">
+                        <a href="https://openexchangerates.org/">Fonte dos dados utilizados: https://openexchangerates.org/</a>
+                    </div>
+            
+                    <button id="botao" onclick="converterMoeda()">Converter</button>
+
+                </div>
+
+            </div>
+
         </div>
+
     </div>
 
+    <footer></footer>
 
 </html>
 <script src="assets/script.js"></script>
