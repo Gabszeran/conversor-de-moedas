@@ -5,14 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    height: 100vh;
-}
+
 body {
     font-family: "Inter", sans-serif;
     background-image: url(img/fundo.jpg);
-    background-position: top;
-    background-size: 100vw 50vh;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -98,8 +96,8 @@ p {
 #resultado {
     font-size: 1.8rem;
     color: #635D5D;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #aviso {
