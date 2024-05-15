@@ -27,10 +27,16 @@ function converterMoeda() {
         console.log(`O valor de ${moedaDestino} = ${valorDestino}`)
 
         let valorConvertido = (valor / valorOrigem) * valorDestino
-        console.log(valorConvertido)
+        console.log(`O valor convertido é igual a ${valorConvertido}`)
         
-        let resultado = document.querySelector("#resultado")
-        resultado.innerHTML = `${valor} ${moedaOrigem} = <br> ${valorConvertido} ${moedaDestino}`
+        if(isNaN(valor)) {
+            let resultado = document.querySelector("#resultado")
+            resultado.innerHTML = "Digite um valor para que seja convertido."
+        } else {
+            let resultado = document.querySelector("#resultado")
+            resultado.innerHTML = `${valor} ${moedaOrigem} = <br> ${valorConvertido} ${moedaDestino}`
+        }
+
     })
     .catch(error => {
         console.error("Ocorreu um erro ao solicitar as taxas de câmbio à API.")
